@@ -2,39 +2,28 @@
 
 ![Sapphire Logo](https://cdn.skyra.pw/gh-assets/sapphire-banner.png)
 
-# @sapphire/template
+# create-sapphire-bot
 
 **Template for Sapphire Repositories.**
 
-[![GitHub](https://img.shields.io/github/license/sapphiredev/template)](https://github.com/sapphiredev/template/blob/main/LICENSE.md)
-[![codecov](https://codecov.io/gh/sapphiredev/sapphire-template/branch/main/graph/badge.svg?token=0MSAyoZNxz)](https://codecov.io/gh/sapphiredev/sapphire-template)
-[![npm](https://img.shields.io/npm/v/@sapphire/template?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/template)
-[![Depfu](https://badges.depfu.com/badges/template/count.svg)](https://depfu.com/github/sapphiredev/e?project_id=template)
+[![GitHub](https://img.shields.io/github/license/sapphiredev/create-sapphire-bot)](https://github.com/sapphiredev/create-sapphire-bot/blob/main/LICENSE.md)
+[![codecov](https://codecov.io/gh/sapphiredev/create-sapphire-bot/branch/main/graph/badge.svg?token=WMt3CM4qW4)](https://codecov.io/gh/sapphiredev/create-sapphire-bot)
+[![npm](https://img.shields.io/npm/v/@sapphire/create-sapphire-bot?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@sapphire/create-sapphire-bot)
+[![Depfu](https://badges.depfu.com/badges/001ad288408da435422d7d97b733469b/count.svg)](https://depfu.com/github/sapphiredev/create-sapphire-bot?project_id=25517)
 
 </div>
 
-# Steps after creating a repo with this template
-
-1. Find and replace all instances of `template` with the proper word / ID / etc
-2. Ensure the primary branch is called `main`
-3. Ensure branch protection is on
-4. Disable `Packages` from being included in the repository homepage
-5. Enable Depfu for the repository
-6. Enable Codecov for the repository
-7. Remove this section from the README
-
 ## Features
 
--   This
--   Needs
--   Some
--   More
--   Filling
--   In
+-   Written in TypeScript
+-   Seamlessly generate the boilerplate for your next bot
+-   Advanced boilerplate generation
+-   Easy to use, powered by [`prompts`](https://npmjs.com/package/prompts)
+-   Fast and lightweight
 
 ## API Documentation
 
-For the full API documentation please refer to the TypeDoc generated [documentation](https://sapphiredev.github.io/template).
+For the full API documentation please refer to the TypeDoc generated [documentation](https://sapphiredev.github.io/create-sapphire-bot).
 
 ## Buy us some doughnuts
 

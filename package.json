@@ -1,12 +1,16 @@
 {
-	"name": "@sapphire/template",
+	"name": "create-sapphire-bot",
 	"version": "0.0.1",
-	"description": "template",
+	"description": "A CLI utility to create your next Sapphire bot with a template.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"author": "@sapphire",
 	"license": "MIT",
 	"private": false,
+	"bin": {
+		"create-sapphire-bot": "./dist/cli.js",
+		"csb": "./dist/cli.js"
+	},
 	"scripts": {
 		"lint": "eslint src tests --ext ts --fix",
 		"format": "prettier --write {src,tests}/**/*.ts",
@@ -24,6 +28,9 @@
 		"prepare": "husky install .github/husky"
 	},
 	"dependencies": {
+		"colorette": "^1.2.2",
+		"commander": "^7.2.0",
+		"prompts": "^2.4.1",
 		"tslib": "^2.2.0"
 	},
 	"devDependencies": {
@@ -35,6 +42,7 @@
 		"@sapphire/ts-config": "^2.2.1",
 		"@types/jest": "^26.0.23",
 		"@types/node": "^15.0.2",
+		"@types/prompts": "^2.0.11",
 		"@typescript-eslint/eslint-plugin": "^4.22.1",
 		"@typescript-eslint/parser": "^4.22.1",
 		"cz-conventional-changelog": "^3.3.0",
@@ -45,6 +53,7 @@
 		"jest": "^26.6.3",
 		"jest-circus": "^26.6.3",
 		"lint-staged": "^11.0.0",
+		"nock": "^13.0.11",
 		"prettier": "^2.2.1",
 		"pretty-quick": "^3.1.0",
 		"standard-version": "^9.3.0",
@@ -57,7 +66,7 @@
 	"peerDependencies": {},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/sapphiredev/template.git"
+		"url": "git+https://github.com/sapphiredev/create-sapphire-bot.git"
 	},
 	"files": [
 		"dist",
@@ -68,7 +77,7 @@
 		"npm": ">=6"
 	},
 	"keywords": [
-		"@sapphire/template",
+		"@sapphire/create-sapphire-bot",
 		"bot",
 		"typescript",
 		"ts",
@@ -78,9 +87,9 @@
 		"discordjs"
 	],
 	"bugs": {
-		"url": "https://github.com/sapphiredev/template/issues"
+		"url": "https://github.com/sapphiredev/create-sapphire-bot/issues"
 	},
-	"homepage": "https://sapphiredev.github.io/template",
+	"homepage": "https://sapphiredev.github.io/create-sapphire-bot",
 	"commitlint": {
 		"extends": [
 			"@commitlint/config-conventional"
