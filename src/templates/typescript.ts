@@ -51,13 +51,14 @@ export const template: Template = {
 								(general) =>
 									general.add('ping.ts', [
 										"import { ApplyOptions } from '@sapphire/decorators';",
+										"import type { Message } from 'discord.js';",
 										"import { Command, CommandOptions } from '@sapphire/framework';",
 										'',
 										'@ApplyOptions<CommandOptions>({',
 										"	aliases: ['pong']",
 										'})',
 										'export class UserCommand extends Command {',
-										'	public async run(message, args: Command.Args) {',
+										'	public async run(message: Message, args: Command.Args) {',
 										"		const msg = await message.channel.send('Ping...');",
 										// eslint-disable-next-line no-template-curly-in-string
 										'		return message.send(`Pong! Took: ${msg.createdTimestamp - message.createdTimestamp}ms!`);',
